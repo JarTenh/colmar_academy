@@ -81,7 +81,7 @@ nav {
 
 header {
     background-color: lightgray;
-    height: auto;
+    height: 730px;
 }
 
 .header-image {
@@ -135,7 +135,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
     header {
         height: 460px;
     }
