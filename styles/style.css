@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    /*border: 1px solid black;*/
+    /* border: 1px solid black; */
 }
 
 html {
@@ -73,11 +73,15 @@ nav {
     display: inline;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Header section */
 
 header {
     background-color: lightgray;
-    height: 730px;
+    height: auto;
 }
 
 .header-image {
@@ -137,7 +141,7 @@ header {
     }
 
     .header-text {
-        width: 20%;
+        width: 30%;
         min-width: 150px;
         height: auto;
         margin: 32px 24px;
@@ -146,16 +150,82 @@ header {
 
     .header-text h1 {
         padding: 2rem 0 2rem 0;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .header-text h2 {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .button {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin: 1.5rem 0;
         padding: 15px 20px;
+    }
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width: 750px) {
+    nav, .logo {
+        width: 100%;
+        height: 64px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo h3 {
+        display: none;
+    }
+
+    .logo img {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+        height: auto;
+    }
+
+    .header-image {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 200px;
+        height: auto;
+    }
+
+    .header-text {
+        margin: 0;
+        padding: 0 0 32px 0;
+        width: 100%;
+        height: auto;
+        background-color: lightgray;
+    }
+
+    .header-text h1 {
+        font-size: 2.5rem;
+        padding: 32px 16px;
+    }
+
+    .header-text h2 {
+        padding: 0 16px 24px 16px;
+    }
+
+    .button {
+        margin: 0 16px;
+        width: auto;
     }
 }
