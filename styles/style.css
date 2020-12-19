@@ -8,7 +8,17 @@
 
 html {
     font-size: 16px;
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    color: #2F2F2F;
     box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.black {
+    color: black;
 }
 
 /* Nav section */
@@ -20,7 +30,7 @@ nav {
 .logo {
     float: left;
     margin-left: 24px;
-    width: 600px;
+    width: 350px;
     padding: 10px 8px;
 }
 
@@ -31,7 +41,7 @@ nav {
 
 .logo h2 {
     text-transform: uppercase;
-    font-size: 32px;
+    color: lightgray;
     display: inline;
 }
 
@@ -55,3 +65,40 @@ nav {
     display: inline;
 }
 
+/* Header section */
+
+header {
+    background-color: lightgray;
+    height: 730px;
+}
+
+header img {
+    width: 60%;
+    height: auto;
+    margin: 32px 24px;
+    float: left
+}
+
+.header-text {
+    width: 28%;
+    height: 600px;
+    margin: 32px 24px;
+    float: left;
+}
+
+.header-text h1 {
+    padding: 100px 0 50px 0;
+    font-size: 3.5rem;
+}
+
+.button {
+    font-size: 1.2rem;
+    margin: 60px 0;
+    width: 200px;
+    display: block;
+    text-decoration: None;
+    padding: 15px 40px;
+    text-align: center;
+    color: ivory;
+    background-color: #2F2F2F;
+}
