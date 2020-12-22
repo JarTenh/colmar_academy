@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid black; */
+    /*border: 1px solid black;*/
 }
 
 html {
@@ -200,6 +200,67 @@ main {
 }
 
 
+/* Course cards */
+
+.start-learning {
+    height: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.headline {
+    width: 100%;
+    text-align: center;
+    padding: 48px 0 24px 0;
+}
+
+.course-cards {
+    margin: 32px 72px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    width: 28%;
+    background-color: white;
+    margin: 16px 0;
+}
+
+.course-card img {
+    width: 100%;
+    height: auto;
+}
+
+.course-card h2 {
+    margin: 16px;
+}
+
+.course-card .card-text {
+    color: darkgray;
+    margin: 8px 16px 24px 16px;
+    width: 80%;
+}
+
+/* Thesis Exhibit section */
+
+.main-left video {
+    width: 100%;
+    margin-right: -24px;
+    margin-bottom: 24px;
+}
+
+.thesis-exhibit .main-left {
+    width: 60%;
+    float: left;
+    margin-right: 0;
+}
+
+.thesis-exhibit .main-right {
+    width: 35%;
+    float: left;
+    margin: 32px 0 32px 24px;
+}
+
 /* Mobile responsive */
 
 @media only screen and (max-width: 1200px) {
@@ -223,17 +284,43 @@ main {
 
     .card-text {
         margin: 12px 0;
+        width: auto;
     }
 
     .card-text p{
         font-size: 1rem;
         margin: 0;
+        width: auto;
     }
 
     .card-text a {
         display: block;
         font-size: 1rem;
         margin: 6px 0;
+    }
+
+    .start-learning h1 {
+        font-size: 2.4rem;
+        padding: 0;
+    }
+
+    .thesis-exhibit h1 {
+        font-size: 2.4rem;
+        padding: 0;
+        margin: 0
+    }
+
+    .thesis-exhibit .main-left {
+        width: 55%;
+    }
+
+    .thesis-exhibit .main-right {
+        margin-right: 12px;
+        margin-top: 20px;
+    }
+
+    .thesis-exhibit .main-right .card {
+        margin: 12px 0;
     }
 }
 
@@ -271,6 +358,11 @@ main {
 
     .main-left h1 {
         font-size: 1.6rem;
+    }
+
+    .start-learning h1 {
+        font-size: 2.4rem;
+        padding: 0;
     }
 }
 
@@ -344,7 +436,7 @@ main {
 
     .main-right, .card {
         display: block;
-        width: 100%;
+        width: 97%;
     }
 
     .main-right img {
@@ -385,4 +477,49 @@ main {
         font-weight: bolder;
         margin: 16px 32px;
     }
+
+    .gray-background {
+        background-color: white;
+    }
+
+    .start-learning {
+        width: 100%;
+        display: block;
+        background-color: white;
+    }
+
+    .course-card {
+        width: 100%;
+        margin: 8px 12px;
+        background-color: lightgray;
+    }
+
+    .course-card .desktop {
+        display: none;
+    }
+
+    .course-card h2 {
+        padding: 24px 16px;
+        margin: 0;
+    }
+
+    .course-cards {
+        width: 100%;
+        margin: 0 0 32px 0;
+    }
+
+    .thesis-exhibit .main-right {
+        display: none;
+    }
+
+    .thesis-exhibit .main-left {
+        display: block;
+        width: 100%;
+        margin: 0 0 42px 0;
+    }
+
+    .thesis-exhibit .desktop {
+        display: none;
+    }
 }
+
