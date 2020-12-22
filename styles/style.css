@@ -261,6 +261,25 @@ main {
     margin: 32px 0 32px 24px;
 }
 
+/* Footer section */
+
+footer {
+    border-top: 1px solid lightgray;
+    width: 100%;
+    float: left;
+    padding-bottom: 36px;
+}
+
+.footer-left {
+    float: left;
+    padding: 24px;
+}
+
+.footer-right {
+    float: right;
+    padding: 24px;
+}
+
 /* Mobile responsive */
 
 @media only screen and (max-width: 1200px) {
@@ -519,6 +538,10 @@ main {
     }
 
     .thesis-exhibit .desktop {
+        display: none;
+    }
+
+    .footer-right {
         display: none;
     }
 }
