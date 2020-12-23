@@ -19,6 +19,7 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    padding: 4px 4px 4px 0;
 }
 
 .black {
@@ -186,6 +187,7 @@ main {
     color: gray;
     margin: 24px 0;
     font-size: 1.2rem;
+    padding-right: 4px;
 }
 
 .blue-link {
@@ -454,13 +456,17 @@ footer {
         width: auto;
     }
 
+    main {
+        display: block;
+    }
+
     .main-left {
         display: none;
     }
 
     .main-right, .card {
         display: block;
-        width: 97%;
+        width: 100%;
     }
 
     .main-right img {
@@ -475,6 +481,9 @@ footer {
 
     .card .mobile {
         display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 
     .card-text {
@@ -540,6 +549,7 @@ footer {
         display: block;
         width: 100%;
         margin: 0 0 42px 0;
+        min-width: 0;
     }
 
     .thesis-exhibit .desktop {
