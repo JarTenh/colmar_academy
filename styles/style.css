@@ -396,6 +396,7 @@ footer {
     body {
         overflow-x: hidden;
         width: 99vw;
+        margin: 0 auto;
     }
 
     nav, .logo {
